@@ -1,0 +1,48 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+header{
+  padding:3em;
+  margin-bottom:50px;
+}
+
+footer{
+  padding:2em;
+  margin-top:50px;
+  text-align:center;
+  color:#FFF;
+  font-size:10px;
+}
+
+main{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.row-fluid{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.three-flex-section .dnd-module{
+  width: calc(100% / 3);
+}
+
+@media (max-width: 900px){
+  .flex-section .dnd-module{
+    width: calc(100% / 2);
+  }
+}
+
+.three-flex-section{
+  margin-top:80px;
+}

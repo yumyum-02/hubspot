@@ -1,0 +1,45 @@
+[ {
+  "id" : "5182c43a-2748-3752-0ce4-6000818ca57b",
+  "name" : "feature_text",
+  "display_width" : null,
+  "label" : "リッチテキスト",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span><span>default text</span>"
+}, {
+  "id" : "a68e30e5-f4b6-ee18-10c4-8d083f2b0a3f",
+  "name" : "feature_image",
+  "display_width" : null,
+  "label" : "画像",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://45516481.fs1.hubspotusercontent-na1.net/hubfs/45516481/img/common/claude-monet-81510_1280.jpg",
+    "alt" : "claude-monet-81510_1280",
+    "loading" : "lazy",
+    "width" : 1280,
+    "height" : 936,
+    "max_width" : 1280,
+    "max_height" : 936
+  }
+}, {
+  "id" : "9026554a-e1ad-7336-3e64-6fffb1c21d62",
+  "name" : "choice_field",
+  "display_width" : null,
+  "label" : "選択",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "img-right", "Image Right" ], [ "img-left", "Image Left" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "img-left"
+} ]

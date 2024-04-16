@@ -1,0 +1,16 @@
+<!--
+  templateType: global_partial
+  label: Website header
+-->
+
+<header class="header">
+  {% inline_text "simple_text_field" field="my_text_field" %}
+  
+  {% widget_block rich_text "right_column" overrideable=True, label="Right Column" %}
+  {% widget_attribute "html" %}
+    <h2>Header text</h2>
+    <p>Some paragraph content...</p>
+  {% end_widget_attribute %}
+  {% end_widget_block %}
+</header>
+

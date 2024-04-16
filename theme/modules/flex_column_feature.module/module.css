@@ -1,0 +1,7 @@
+.flex-col-feature{
+/*   width: calc((100% - 10px) / 3); */
+  padding: 0 10px;
+}
+.img{
+  max-width: 100%;
+}

@@ -1,0 +1,20 @@
+<div class="two-col-feature {{ module.choice_field }}">
+  
+  <div class="col text" style="{{ module.style.border_field.css }};">
+    {% inline_rich_text field="feature_text" value="{{ module.feature_text }}" %}
+  </div>
+  
+  <div class="col image">
+    {% if module.feature_image.src %}
+	    {% set sizeAttrs = 'width="{{ module.feature_image.width|escape_attr }}" height="{{ module.feature_image.height|escape_attr }}"' %}
+	  {% if module.feature_image.size_type == 'auto' %}
+		  {% set sizeAttrs = 'width="{{ module.feature_image.width|escape_attr }}" height="{{ module.feature_image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+	  {% elif module.feature_image.size_type == 'auto_custom_max' %}
+		  {% set sizeAttrs = 'width="{{ module.feature_image.max_width|escape_attr }}" height="{{ module.feature_image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+	  {% endif %}
+	    {% set loadingAttr = module.feature_image.loading != 'disabled' ? 'loading="{{ module.feature_image.loading|escape_attr }}"' : '' %}
+	    <img src="{{ module.feature_image.src|escape_url }}" alt="{{ module.feature_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+  
+</div>

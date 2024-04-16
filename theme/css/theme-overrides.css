@@ -1,0 +1,13 @@
+{% import './tools/_macros.css' %}
+
+{% set primary_font = theme.fonts.primary %}
+
+header{
+  {{ primary_font.style }};
+  background-color: {{ theme.website_header.header_background_color }};
+}
+
+footer{
+  {{ primary_font.style }};
+  background-color: {{ theme.website_footer.footer_background_color }};
+}

@@ -1,0 +1,48 @@
+<!--
+    templateType: page
+    label: Page template
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    <link rel="stylesheet" href="{{ get_asset_url('theme/css/style.css') }}">
+    {{ require_css(get_asset_url('theme/css/theme-overrides.css')) }}
+    {{ standard_header_includes }}
+  </head>
+  <body>
+    {% block header %}
+        {% global_partial path='theme/partials/header.html' %}
+    {% endblock header %}
+    
+    <main>
+    {% dnd_area "dnd_area" label="Main section" %}
+    
+      {% dnd_section %}
+        {% dnd_column
+        width=2 %}
+          {% dnd_row %}
+            {% dnd_module
+              path="/theme/modules/two_column_feature",
+              offset=1,
+              width=2 %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      
+      {% include_dnd_partial path="/theme/section/custom_section.html"  class="three-flex" %}
+
+    {% end_dnd_area %}
+    </main>
+    
+    {% block footer %}
+        {% global_partial path='/theme/partials/footer.html' %}
+    {% endblock footer %}
+    
+    {{ standard_footer_includes }}
+  </body>
+</html>
